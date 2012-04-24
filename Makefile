@@ -13,7 +13,7 @@ NODE_BIN := $(TOOLS_DIR)/node_modules/.bin
 
 .PHONY: test
 test: 
-	$(NODE_BIN)/mocha
+	$(NODE_BIN)/mocha $(MOCHAOPTS)
 
 .PHONY: lint
 lint:
